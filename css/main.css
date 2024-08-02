@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.wrapper {
+    position: relative;
+    width: 320px;
+    height: 240px;
+}
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    animation: move 14s infinite;
+}
+
+@keyframes move {
+    0% { top: 0; left: 0; }
+    14.28% { top: 0; left: 120px; }
+    28.56% { top: 120px; left: 120px; }
+    42.84% { top: 120px; left: 240px; }
+    57.12% { top: 240px; left: 240px; }
+    71.4% { top: 240px; left: 120px; }
+    85.68% { top: 240px; left: 0; }
+    100% { top: 0; left: 0; }
+}
